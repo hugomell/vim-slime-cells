@@ -14,7 +14,7 @@ vnoremap <silent> ic :<c-u>call slime_cells#select_current_cell(0)<cr>
 vnoremap <silent> ac :<c-u>call slime_cells#select_current_cell(1)<cr>
 
 if !exists("g:slime_cells_highlight_from")
-    let g:slime_cells_highlight_from = "SpecialComment"
+    let g:slime_cells_highlight_from = "Comment"
 endif
 
 sig define SlimeCell linehl=CellBoundary
